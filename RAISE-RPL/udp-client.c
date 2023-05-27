@@ -30,12 +30,12 @@
 #include "contiki.h"
 #include "lib/random.h"
 #include "sys/ctimer.h"
-#include "net/uip.h"
-#include "net/uip-ds6.h"
-#include "net/uip-udp-packet.h"
+#include "net/ip/uip.h"
+#include "net/ipv6/uip-ds6.h"
+#include "net/ip/uip-udp-packet.h"
 #include "sys/ctimer.h"
 
-#include "powertrace.c"
+#include "../powertrace/powertrace.c"
 #include "sys/node-id.h"
 #include "params.h"
 
@@ -51,7 +51,7 @@
 #define UDP_EXAMPLE_ID  190
 
 #define DEBUG DEBUG_PRINT
-#include "net/uip-debug.h"
+#include "net/ip/uip-debug.h"
 
 #ifndef PERIOD
 #define PERIOD 60
